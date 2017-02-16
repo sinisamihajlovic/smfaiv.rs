@@ -18,13 +18,17 @@
             height: 100%;
         }
 
+        .container-fluid {
+
+        }
+
         body {
             background: url(kablovi.jpeg) no-repeat center center fixed;
             background-size: cover;
             color: #001A22;
         }
 
-        .col-md-6, .col-sm-8, .col-xs-10 {
+        .col-md-6, .col-sm-10, .col-xs-12 {
             background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px;
             padding-bottom: 2em;
@@ -39,7 +43,20 @@
             padding-left: 2em;
         }
 
+        @media (max-width: 375px) {
+            img {
+                width: 100%;
+            }
 
+            img, h5, .col-md-6, .col-sm-10, .col-xs-12 {
+                padding: 10px;
+            }
+
+            html, body, .container-fluid, .row {
+                height: auto;
+            }
+
+        }
 
     </style>
 
@@ -47,7 +64,7 @@
   <body>
       <div class="container-fluid">
           <div class="row align-items-center justify-content-center">
-              <div class="col-md-6 col-sm-8 col-xs-10">
+              <div class="col-md-6 col-sm-10 col-xs-12">
                   <img src="logo.png" alt="smf-aiv doo Vršac logo">
                   <h5>Beogradski Put bb, 26300 Vršac, Srbija</h5>
                   <h5>Proizvodnja elektronskih i električnih provodnika i kablova</h5>
