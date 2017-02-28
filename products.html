@@ -54,22 +54,31 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-left">
                     <li>
-                        <a href="index.html">Početna</a>
+                      <a href="index.html">Početna</a>
                     </li>
                     <li>
                         <a href="about.html">O kompaniji</a>
                     </li>
-                    <li>
-                        <a href="products.html">Proizvodi</a>
+                    <li class="dropdown active-page">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proizvodnja <span class="caret"></span> <span class="sr-only">(current)</span></a>
+                      <ul class="dropdown-menu">
+                        <li class="active-page">
+                            <a href="products.html">Proizvodi <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="technology.html">Tehnologija</a>
+                        </li>
+                      </ul>
                     </li>
-                    <li>
-                        <a href="technology.html">Tehnologija</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Kontakt</a>
-                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="contact.html">Kontakt</a>
+                  </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -83,8 +92,8 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Naši
-                        <strong>proizvodi i tehnologije</strong>
+                    <h2 class="intro-text text-center">smf-aiv
+                        <strong>proizvodi</strong>
                     </h2>
                     <hr>
                 </div>
