@@ -61,7 +61,7 @@ hr {
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: bolder;
     letter-spacing: 3px;
     font-family: Verdana, Geneva, sans-serif;
 }
