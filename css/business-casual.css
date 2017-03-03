@@ -61,8 +61,9 @@ hr {
 
 .navbar-nav {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 3px;
+    font-family: Arial, Gadget, sans-serif;
 }
 
 .img-full {
@@ -146,10 +147,10 @@ footer p {
         display: inherit;
         margin: 0;
         padding: 0;
-        padding-top: 10px;
+        padding-top: 20px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Arial Black", Gadget, sans-serif;
+        font-family: Arial, Gadget, sans-serif;
         font-size: 7em;
         font-weight: 600;
         line-height: normal;
@@ -233,8 +234,6 @@ footer p {
       padding: 20px;
       text-align: center;
     }
-
-
 }
 
 @media screen and (min-width:1200px) {
