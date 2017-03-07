@@ -1,3 +1,9 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
 body {
     font-family: Verdana, Geneva, sans-serif;
     background: #ccc;
@@ -154,7 +160,7 @@ footer p {
         display: inherit;
         margin: 0;
         padding: 0;
-        padding-top: 20px;
+        padding-top: 30px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: Arial, Gadget, sans-serif;
@@ -170,6 +176,7 @@ footer p {
 
     .brand img {
       margin-bottom: 20px;
+      margin-top: 10px;
     }
 
     .carousel-caption {
