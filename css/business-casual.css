@@ -4,12 +4,13 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+/* Global css */
 body {
     font-family: Verdana, Geneva, sans-serif;
     background: #ccc;
-  background: -webkit-linear-gradient(#ccc, #eee);
-  background:    -moz-linear-gradient(#ccc, #eee);
-  background:         linear-gradient(#ccc, #eee);
+    background: -webkit-linear-gradient(#ccc, #eee);
+    background:    -moz-linear-gradient(#ccc, #eee);
+    background:         linear-gradient(#ccc, #eee);
 }
 
 h1,
@@ -19,7 +20,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: Arial, Gadget, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -28,10 +29,6 @@ p {
     font-size: 1.2em;
     line-height: 1.6;
     color: #000;
-}
-
-.carousel-caption h1 {
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 .col-md-6 ul li {
@@ -45,55 +42,27 @@ hr {
     border-color: #999999;
 }
 
-.brand,
-.address-bar {
-    display: none;
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 9999;
 }
 
-.navbar-brand {
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: 2px;
-    float: none;
+footer {
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 1em;
 }
 
 .active-page {
   background-color: #eee;
-}
-
-.logosmall {
-  padding: 5px;
-}
-
-.navbar-nav {
-    text-transform: uppercase;
-    font-weight: bolder;
-    letter-spacing: 3px;
-    font-family: Verdana, Geneva, sans-serif;
-}
-
-.img-full {
-    min-width: 100%;
-}
-
-.brand-before,
-.brand-name {
-    text-transform: capitalize;
-}
-
-.brand-before {
-    margin: 15px 0;
-}
-
-.brand-name {
-    margin: 0;
-    font-size: 4em;
-}
-
-.tagline-divider {
-    margin: 15px auto 3px;
-    max-width: 250px;
-    border-color: #999999;
 }
 
 .box {
@@ -122,39 +91,72 @@ hr {
 }
 
 .img-responsive {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
-footer {
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+.img-full {
+    min-width: 100%;
 }
 
-footer p {
+/* Branding and navigation mobile */
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    float: none;
+    padding-left: 0px;
+}
+
+.logosmall {
+    padding: 10px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: Arial, Gadget, sans-serif;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
     margin: 0;
-    padding: 20px 0;
-    font-size: 1em;
+    font-size: 4em;
 }
 
-.back-to-top {
-    cursor: pointer;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
 }
 
-  .carousel-caption {
+/* Carousel mobile hidden */
+.carousel-caption {
     visibility: hidden;
-  }
+}
 
-  iframe {
+/* Google maps */
+iframe {
     border: none;
     height: 420px;
     width: 100%;
     margin-top: 20px;
-  }
+}
 
+/* Medium screen and up */
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -171,21 +173,21 @@ footer p {
     }
 
     .h1LowerCase {
-      text-transform: none;
+        text-transform: none;
     }
 
     .brand img {
-      margin-bottom: 20px;
-      margin-top: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
     }
 
     .carousel-caption {
-      visibility: visible;
+        visibility: visible;
     }
 
     .carousel-caption h1 {
-      font-size: 3em;
-      text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
+        font-size: 3em;
+        text-shadow: 3px 3px 2px rgba(0,0,0,0.5);
     }
 
     .top-divider {
@@ -229,7 +231,7 @@ footer p {
     }
 
     .nav>li>a {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
     .navbar-nav>li>a {
@@ -250,6 +252,7 @@ footer p {
     }
 }
 
+/* Large screen */
 @media screen and (min-width:1200px) {
     .box:after {
         content: '';

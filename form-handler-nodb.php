@@ -1,20 +1,20 @@
 <?php
-// Emails form data to you and the person submitting the form
+// Emails form data to you
 // This version requires no database.
 // Set your email below
-$myemail = "office@smfaiv.rs"; // Replace with your email, please
+$myemail = "sinisamihajlovic@spojsamasom.in.rs";
 
-// Receive and sanitize input
+// Receive and sanitize Input
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // set up email
-$msg = "New contact form submission!\nName: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nEmail: " . $email;
+$msg = "Poruka od:\nIme i prezime: " . $name . "\nEmail: " . $email . "\nTelefon: " . $phone . "\nPoruka: " . $message;
 $msg = wordwrap($msg,70);
-mail($myemail,"New Form Submission",$msg);
-mail($email,"Thank you for your form submission",$msg);
-echo 'Thank you for your submission.  Please <a href="index.html">Click here to return to our homepage.';
-
+mail($myemail,"Kontakt forma sa sajta",$msg);
+  echo '<script type="text/javascript">
+         window.location = "mail-sent.html"
+    </script>';
 ?>
