@@ -7,10 +7,10 @@
 /* Global css */
 body {
     font-family: Verdana, Geneva, sans-serif;
-    background: #ccc;
-    background: -webkit-linear-gradient(#ccc, #eee);
-    background:    -moz-linear-gradient(#ccc, #eee);
-    background:         linear-gradient(#ccc, #eee);
+    background: #ddd;
+    background: -webkit-linear-gradient(#ddd, #eee);
+    background:    -moz-linear-gradient(#ddd, #eee);
+    background:         linear-gradient(#ddd, #eee);
 }
 
 h1,
@@ -160,9 +160,8 @@ iframe {
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
-        margin: 0;
+        margin-top: 10px;
         padding: 0;
-        padding-top: 30px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: Arial, Gadget, sans-serif;
@@ -177,8 +176,8 @@ iframe {
     }
 
     .brand img {
-        margin-bottom: 20px;
-        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     .carousel-caption {
@@ -202,7 +201,7 @@ iframe {
     .address-bar {
         display: inherit;
         margin: 0;
-        padding: 0 0 20px;
+        padding: 20px 0 20px 0;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         text-transform: uppercase;
